@@ -1,0 +1,38 @@
+.Calculator {
+    display: flex;
+    justify-content: center;
+}
+
+.Calc {
+    width: 40vh;
+    height: 50vh;
+    margin-top: 10vh;
+    border: 0;
+    border-radius: 3vh;
+}
+
+.Count {
+    border-radius: 3vh;
+    width: 30vh;
+    height: 4vh;
+    margin-top: 4vh;
+    margin-left: 5vh;
+    font-size: 3vh;
+}
+
+.BTN {
+    width: 8vh;
+    height: 8vh;
+    font-size: 5vh;
+    border-radius: 1vh;
+    background-color: rgba(39, 225, 122, 1);
+}
+
+.BTN:hover {
+    background-color: rgb(50, 214, 124);
+}
+
+.Buttons {
+    margin-left: 8vh;
+    margin-top: 1vh;
+}
