@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import copy from 'copy-text-to-clipboard';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+   CopyBTNText: string = 'Copy';
    Final: string = '';
 
    Count(value: string) {
@@ -21,6 +23,14 @@ export class HomeComponent {
    }
 
    calculate(expression: string): string {
-     return eval(expression);
+     try {
+       return String(eval(expression));
+     } catch (error) {
+       return 'Error';
+     }
+   }
+
+   Copy() {
+    copy(this.Final);
    }
 }
